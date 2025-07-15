@@ -72,9 +72,8 @@ console.log(makeTransaction(10, 500, 5000)); // "You ordered 10 droids worth 500
 function formatMessage(message, maxLength) {
   if (message.length <= maxLength) {
     return message;
-  } else if (message > maxLength) {
-    message.slice(0, maxLength);
-    return message + "...";
+  } else if (message.length > maxLength) {
+    return message.slice(0, maxLength) + "...";
   }
 
 }
