@@ -86,13 +86,8 @@ console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // 
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
 
 const checkForSpam = (message) => {
-  const messageArr = message.split(" ");
-  return messageArr.forEach(word => {
-    if (word.toLowerCase() === "spam" || word.toLowercase() === "sale") {
-      return true;
-    }
-  })
-
+  const lowerCaseMessage = message.toLowerCase();
+  return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
 }
 
 console.log(checkForSpam("Latest technology news")); // false
