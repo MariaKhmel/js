@@ -85,6 +85,7 @@ console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
 
+//task3
 const checkForSpam = (message) => {
   const lowerCaseMessage = message.toLowerCase();
   return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
@@ -97,3 +98,29 @@ console.log(checkForSpam("Amazing SalE, only tonight!")); // true
 console.log(checkForSpam("Trust me, this is not a spam message")); // true
 console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
 console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+
+//task4
+function getShippingCost(country) {
+  switch (country) {
+    case "China":
+      return `Shipping to China will cost 100 credits`;
+
+    case "Chile":
+      return `Shipping to Chile will cost 250 credits`;
+
+    case "Australia":
+      return `Shipping to Australia will cost 170 credits`;
+
+    case "China":
+      return `Shipping to Jamaica will cost 120 credits`;
+    default:
+      return "Sorry, there is no delivery to your country";
+  }
+}
+
+console.log(getShippingCost("Australia")); // "Shipping to Australia will cost 170 credits"
+console.log(getShippingCost("Germany")); // "Sorry, there is no delivery to your country"
+console.log(getShippingCost("China")); // "Shipping to China will cost 100 credits"
+console.log(getShippingCost("Chile")); // "Shipping to Chile will cost 250 credits"
+console.log(getShippingCost("Jamaica")); // "Shipping to Jamaica will cost 120 credits"
+console.log(getShippingCost("Sweden")); // "Sorry, there is no delivery to your country"
