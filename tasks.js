@@ -124,3 +124,16 @@ console.log(getShippingCost("China")); // "Shipping to China will cost 100 credi
 console.log(getShippingCost("Chile")); // "Shipping to Chile will cost 250 credits"
 console.log(getShippingCost("Jamaica")); // "Shipping to Jamaica will cost 120 credits"
 console.log(getShippingCost("Sweden")); // "Sorry, there is no delivery to your country"
+
+
+///module3
+//task2
+
+function slugify(title) {
+  return title.split(" ").join("-").toLowerCase();
+}
+
+console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
+console.log(slugify("English for developer")); // "english-for-developer"
+console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
