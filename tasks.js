@@ -164,10 +164,9 @@ const filterArray = (numbers, value) => {
   const newArr = [];
 
   for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] < value) {
-      continue;
+    if (numbers[i] > value) {
+      newArr.push(numbers[i]);
     }
-    newArr.push(numbers[i]);
   }
 
   return newArr;
