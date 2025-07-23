@@ -160,16 +160,24 @@ console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
 
 ///task3
 
+//solution 1
+// const filterArray = (numbers, value) => {
+//   const newArr = [];
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] > value) {
+//       newArr.push(numbers[i]);
+//     }
+//   }
+
+//   return newArr;
+// }
+
+//solution2
+
+
 const filterArray = (numbers, value) => {
-  const newArr = [];
-
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > value) {
-      newArr.push(numbers[i]);
-    }
-  }
-
-  return newArr;
+  return numbers.filter((el) => el > value);
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
