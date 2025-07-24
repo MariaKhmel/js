@@ -191,9 +191,11 @@
 //task1
 
 const isEnoughCapacity = function (products, containerSize) {
+  let sum = 0;
   for (const product in products) {
-    console.log(product)
+    sum += products[product];
   }
+  return sum >= containerSize ? true : false;
 }
 
 
