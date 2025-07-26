@@ -221,8 +221,7 @@ function calcAverageCalories(days) {
   let averageCalories = 0;
   let weeklyCalories = 0;
   if (days.length > 0) {
-    for (const day in days) {
-      console.log(day)
+    for (const day of days) {
       weeklyCalories += day.calories;
     }
     averageCalories = weeklyCalories / days.length;
