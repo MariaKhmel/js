@@ -433,10 +433,17 @@ console.log(getUsersWithFriend(allUsers, "Adrian Cross")); // []
 //   return users.toSorted((a, b) => b.friends.length - a.friends.length);
 // }
 
-const sortByDescendingFriendCount = (users) => {
-  return [...users].sort((a, b) => b.friends.length - a.friends.length);
-}
+// const sortByDescendingFriendCount = (users) => {
+//   return [...users].sort((a, b) => b.friends.length - a.friends.length);
+// }
 
+const sortByDescendingFriendCount = (users) => {
+  for (let i = 0; i < users.length - 1; i++) {
+    for (let j = i + 1; j < users.length; j++) {
+      console.log(j)
+    }
+  }
+}
 
 console.log(
   sortByDescendingFriendCount([
