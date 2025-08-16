@@ -438,10 +438,12 @@
 // }
 
 const sortByDescendingFriendCount = (users) => {
-  for (let i = 0; i < users.length - 1; i++) {
-    for (let j = i + 1; j < users.length; j++) {
-      console.log("i", users[i].friends);
-      console.log("j", users[j].friends);
+  const usersCopy = [...users];
+  for (let i = 0; i < usersCopy.length - 1; i++) {
+    for (let j = i + 1; j < usersCopy.length; j++) {
+      if (usersCopy[i].friends.length < usersCopy[j].friends.length) {
+        let temp = usersCopy[i]
+      }
     }
   }
 }
