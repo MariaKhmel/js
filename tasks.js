@@ -437,56 +437,56 @@
 //   return [...users].sort((a, b) => b.friends.length - a.friends.length);
 // }
 
-const sortByDescendingFriendCount = (users) => {
-  const usersCopy = [...users];
-  for (let i = 0; i < usersCopy.length - 1; i++) {
-    for (let j = i + 1; j < usersCopy.length; j++) {
-      if (usersCopy[i].friends.length < usersCopy[j].friends.length) {
-        let temp = usersCopy[i]
-      }
-    }
-  }
-}
+// const sortByDescendingFriendCount = (users) => {
+//   const usersCopy = [...users];
+//   for (let i = 0; i < usersCopy.length - 1; i++) {
+//     for (let j = i + 1; j < usersCopy.length; j++) {
+//       if (usersCopy[i].friends.length < usersCopy[j].friends.length) {
+//         let temp = usersCopy[i]
+//       }
+//     }
+//   }
+// }
 
-console.log(
-  sortByDescendingFriendCount([
-    {
-      name: "Moore Hensley",
-      friends: ["Sharron Pace"],
-      gender: "male"
-    },
-    {
-      name: "Sharlene Bush",
-      friends: ["Briana Decker", "Sharron Pace"],
-      gender: "female"
-    },
-    {
-      name: "Ross Vazquez",
-      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-      gender: "male"
-    },
-    {
-      name: "Elma Head",
-      friends: ["Goldie Gentry", "Aisha Tran"],
-      gender: "female"
-    },
-    {
-      name: "Carey Barr",
-      friends: ["Jordan Sampson", "Eddie Strong"],
-      gender: "male"
-    },
-    {
-      name: "Blackburn Dotson",
-      friends: ["Jacklyn Lucas", "Linda Chapman"],
-      gender: "male"
-    },
-    {
-      name: "Sheree Anthony",
-      friends: ["Goldie Gentry", "Briana Decker"],
-      gender: "female"
-    }
-  ])
-);
+// console.log(
+//   sortByDescendingFriendCount([
+//     {
+//       name: "Moore Hensley",
+//       friends: ["Sharron Pace"],
+//       gender: "male"
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       gender: "female"
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       gender: "male"
+//     },
+//     {
+//       name: "Elma Head",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       gender: "female"
+//     },
+//     {
+//       name: "Carey Barr",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       gender: "male"
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       gender: "male"
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       gender: "female"
+//     }
+//   ])
+// );
 // [
 //   {
 //     name: "Ross Vazquez",
@@ -524,3 +524,5 @@ console.log(
 //     gender: "male"
 //   }
 // ]
+
+gs.info("hi")
